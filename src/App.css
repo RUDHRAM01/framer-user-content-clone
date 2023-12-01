@@ -126,3 +126,46 @@
   height: auto; 
   border-radius: 24px;
 }
+
+/* Features */
+
+.feature{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+
+.feature .featureCard{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.featureCard .card1{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 40px 40px;
+  width: 460px;
+  font-size: calc(30px + 1vmin);
+  height: 40vh;
+  background-color: #ededfa;
+  border-radius: 24px;
+  font-weight: 600;
+  border: 1px solid rgba(211, 211, 211, 0.595);
+}
+
+.featureCards , .card2{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  text-align: start;
+  border: 1px solid rgba(211, 211, 211, 0.686);
+  border-radius: 24px;
+}
+
+.featureCards{
+  width: 364px;
+}
