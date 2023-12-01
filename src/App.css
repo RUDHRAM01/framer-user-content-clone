@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+/* landing */
+.landing{
+  background: linear-gradient(to bottom, #ffc0cb37, #f5f5dc5d);
+}
+/* Nav Bar Css */
+.NavBar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  min-height: 8vh;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.481);
+} 
+
+.Links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 1vmin);
+  color: rgb(0, 0, 0);
+  gap: 40px;
+  font-weight: 500;
+}
+
+.Links button{
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 16px 20px;
+  border-radius: 8px;
+}
+
+/* Lag Line */
+.TagLine{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  width: 100%;
+}
+
+.TagLine .child1{
+  background-color: white;
+  padding: 4px 8px;
+  border: 1px solid rgba(211, 211, 211, 0.481);
+  border-radius: 8px;
+  color: #8247ff;
+  font-size: 12px;
+  white-space: normal;
+  letter-spacing: 1px;
+  font-weight: 650;
+  margin-bottom: 0%;
+}
+
+.child1 span{
+  font-size: 16px;
+}
+
+.TagLine .child2{
+  font-weight: 700;
+  letter-spacing: 1px;
+  width: 80%;
+  margin: 0%;  
+}
+
+.TagLine .child3{
+  font-size: 20px;
+  width: 44%;
+  color: #767575;
+}
+
+.TagLine .child4 {
+  display: flex;
+  gap: 20px;
+}
+
+.child4 button:first-child {
+  background-color: #8247ff;
+  color: #ffffff;
+  padding: 12px 34px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.child4 button:last-child {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 34px;
+  font-size: 20px;
+  border: 1px solid rgba(211, 211, 211, 0.686);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.WebImage{
+  background: linear-gradient(to bottom, #f5f5dc5d, #f5f5dc1d);
+}
+.WebImage img{
+  max-width: 80%; 
+  max-height: 100%; 
+  height: auto; 
+  border-radius: 24px;
+}
