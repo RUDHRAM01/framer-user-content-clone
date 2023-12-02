@@ -5,11 +5,11 @@ import { MdPhoneIphone } from "react-icons/md";
 import { GoBell } from "react-icons/go";
 import { FaFire } from "react-icons/fa6";
 
-function MoreFeature() {
+function MoreFeature({isMobile}) {
     const data = {
         icon: "🤩",
         title1: "AND MORE...",
-        size: { title1: "50px" },
+        size: isMobile ? { title1: "30px" } : { title1: "50px" },
         color: "#fdf2ec",
         title2: "Explore an array of features that elevate your ",
         highlighted: "Productivity",
