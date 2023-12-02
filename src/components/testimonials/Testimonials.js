@@ -1,5 +1,6 @@
 import React from 'react'
 import TagLine from '../landing/TagLine'
+import Card from './Card'
 
 
 function Testimonials() {
@@ -15,6 +16,7 @@ function Testimonials() {
   return (
       <div>
           <TagLine data={data} />
+          <Card />
     </div>
   )
 }
