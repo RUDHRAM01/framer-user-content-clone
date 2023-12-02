@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { IoMenu } from "react-icons/io5";
 
-function Nav() {
+function Nav({ isMobile }) {
     const Links = [
         {
             name: "Features",
@@ -23,18 +24,20 @@ function Nav() {
         <>
             <div className='NavBar'>
                 <div className='Logo'>
-                    <img src="https://framerusercontent.com/images/tgELERqZ0nObn14bTi418qTbg.png?scale-down-to=512" alt="Logo" width="180px"/>
+                    <img src="https://framerusercontent.com/images/tgELERqZ0nObn14bTi418qTbg.png?scale-down-to=512" alt="Logo" width="180px" />
                 </div>
-                <div className='Links'>
-                    {Links.map((value, i) =>
-                        <p>
-                            {value?.name}
-                        </p>
-                    )}
-                    <button>
-                        Buy Template
-                    </button>
-                </div>
+                {isMobile ? <IoMenu style={{fontSize:"34px"}}/> :
+                    <div className='Links'>
+                        {Links.map((value, i) =>
+                            <p>
+                                {value?.name}
+                            </p>
+                        )}
+                        <button>
+                            Buy Template
+                        </button>
+                    </div>
+                }
             </div>
         </>
     )
