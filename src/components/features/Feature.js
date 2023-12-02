@@ -1,11 +1,11 @@
 import React from 'react'
 import TagLine from '../landing/TagLine'
 import Card from './Card'
-function Feature() {
+function Feature({isMobile}) {
     const data = {
         icon: "🔥",
         title1: "PREMIER FEATURES",
-        size: { title1: "50px" },
+        size: isMobile ? { title1: "30px" } : { title1: "50px" },
         title2: "Discover our product's",
         highlighted: "Capabilities",
         title4: "Don't settle for mediocrity - embrace the future of management with Manage Wise.",
