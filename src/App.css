@@ -6,11 +6,11 @@
 }
 
 /* landing */
-.landing{
+.landing {
   background: linear-gradient(to bottom, #ffc0cb37, #f5f5dc5d);
 }
 /* Nav Bar Css */
-.NavBar{
+.NavBar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,9 +18,9 @@
   padding: 10px 30px;
   min-height: 8vh;
   border-bottom: 1px solid rgba(211, 211, 211, 0.481);
-} 
+}
 
-.Links{
+.Links {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -31,7 +31,7 @@
   font-weight: 500;
 }
 
-.Links button{
+.Links button {
   background-color: white;
   border: none;
   font-size: 16px;
@@ -43,7 +43,7 @@
 }
 
 /* Lag Line */
-.TagLine{
+.TagLine {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,7 +54,7 @@
   width: 100%;
 }
 
-.TagLine .child1{
+.TagLine .child1 {
   background-color: white;
   padding: 4px 8px;
   border: 1px solid rgba(211, 211, 211, 0.481);
@@ -67,18 +67,18 @@
   margin-bottom: 0%;
 }
 
-.child1 span{
+.child1 span {
   font-size: 16px;
 }
 
-.TagLine .child2{
+.TagLine .child2 {
   font-weight: 700;
   letter-spacing: 1px;
   width: 80%;
-  margin: 0%;  
+  margin: 0%;
 }
 
-.TagLine .child3{
+.TagLine .child3 {
   font-size: 20px;
   width: 44%;
   color: #767575;
@@ -117,25 +117,25 @@
   justify-content: center;
 }
 
-.WebImage{
+.WebImage {
   background: linear-gradient(to bottom, #f5f5dc5d, #f5f5dc1d);
 }
-.WebImage img{
-  max-width: 80%; 
-  max-height: 100%; 
-  height: auto; 
+.WebImage img {
+  max-width: 80%;
+  max-height: 100%;
+  height: auto;
   border-radius: 24px;
 }
 
 /* Features */
 
-.feature{
+.feature {
   display: flex;
   flex-direction: column;
   padding: 0px 40px;
 }
 
-.feature .featureCard{
+.feature .featureCard {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -143,7 +143,7 @@
   gap: 40px;
 }
 
-.featureCard .card1{
+.featureCard .card1 {
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -157,7 +157,8 @@
   border: 1px solid rgba(211, 211, 211, 0.595);
 }
 
-.featureCards , .card2{
+.featureCards,
+.card2 {
   display: flex;
   flex-direction: column;
   width: 600px;
@@ -166,6 +167,122 @@
   border-radius: 24px;
 }
 
-.featureCards{
+.featureCards {
   width: 364px;
+}
+
+.moreFeature {
+  background: #1c1c1c;
+}
+.moreCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.moreCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #212121;
+  width: 300px;
+  height: 40vh;
+  border-radius: 24px;
+  border: 1px solid rgba(211, 211, 211, 0.053);
+}
+
+.moreFeature img {
+  max-width: 36%;
+  max-height: 50%;
+  height: auto;
+}
+
+.qa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 80px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.planCard {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items:flex-end;
+  justify-content: center;
+}
+
+.planFeatureCard .type {
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: red;
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+
+.planFeatureCard:first-child,
+.planFeatureCard:last-child {
+  background-color: #ededfa;
+}
+
+.planFeatureCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1c1c1c;
+  padding: 40px 40px;
+  border-radius: 36px;
+  height: fit-content;
+  min-height: 52vh;
+}
+
+.planFeatureCard .price span {
+  font-size: 54px;
+}
+
+.planFeatureCard .price {
+  font-weight: 600;
+  text-align: start;
+  margin-top: 0%;
+}
+
+.planFeatureCard:nth-child(2) .price {
+  color: white;
+}
+
+.featureText {
+  color: #767575;
+  text-align: start;
+  padding: 2px 20px;
+  height: fit-content;
+  width: 250px;
+}
+
+.planFeatureCard button {
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 16px;
+}
+
+.planFeatureCard:nth-child(odd) button {
+  background-color: white;
+}
+.planFeatureCard:nth-child(2) button {
+  background-color: #8247ff;
+  color: white;
 }
