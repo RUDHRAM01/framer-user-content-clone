@@ -3,11 +3,11 @@ import TagLine from '../landing/TagLine'
 import Card from './Card'
 
 
-function Testimonials() {
+function Testimonials({isMobile}) {
     const data = {
         icon: "🧡",
         title1: "TESTIMONIALS",
-        size: { title1: "50px" },
+        size: isMobile ? { title1: "30px" } : { title1: "50px" },
         title2: "Hear from our",
         highlighted: "Satisfied",
         title3: "clients",
