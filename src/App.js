@@ -25,13 +25,13 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Landing isMobile={isMobile}/>
+      <Landing isMobile={isMobile} />
       <WebImage />
-      <Feature isMobile={isMobile}/>
-      <MoreFeature isMobile={isMobile}/>
-      <QA />
-      <Plan />
-      <Testimonials />
+      <Feature isMobile={isMobile} />
+      <MoreFeature isMobile={isMobile} />
+      <QA isMobile={isMobile} />
+      <Plan isMobile={isMobile} />
+      <Testimonials isMobile={isMobile} />
       <Join />
       <Bottom />
     </div>
