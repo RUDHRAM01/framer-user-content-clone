@@ -2,11 +2,11 @@ import React from 'react'
 import TagLine from '../landing/TagLine'
 import Card from './Card'
 
-function Plan() {
+function Plan({isMobile}) {
     const data = {
         icon: "💲",
         title1: "PRICING",
-        size: { title1: "50px" },
+        size: isMobile ? { title1: "30px" } : { title1: "50px" },
         title2: "Select your ideal",
         highlighted: "Pricing",
         title3: "plan",
