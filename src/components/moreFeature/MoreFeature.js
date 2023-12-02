@@ -20,7 +20,7 @@ function MoreFeature({isMobile}) {
     const integration = {
         icon: "🛠",
         title1: "INTEGRATION",
-        size: { title1: "50px" },
+        size: isMobile ? { title1: "30px" } : { title1: "50px" },
         color: "#fdf2ec",
         title2: "Enable ",
         highlighted: "integration",
