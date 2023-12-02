@@ -6,7 +6,7 @@ function TagLine(props) {
             <p className='child1'>
                 <span>{props?.data?.icon}</span> {props?.data?.title1}
             </p>
-            <p className='child2' style={{fontSize : `${props?.data?.size?.title1}`}}>
+            <p className='child2' style={{fontSize : `${props?.data?.size?.title1}`,color: props?.data?.color ? props?.data?.color : "black"}}>
                 {props?.data?.title2} <span style={{ color: "#fe8162" }}>{props?.data?.highlighted}</span> {props?.data?.title3}
             </p>
             {props?.data?.title4 &&
