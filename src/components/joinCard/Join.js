@@ -1,11 +1,11 @@
 import React from 'react'
 import TagLine from '../landing/TagLine'
 
-function Join() {
+function Join({isMobile}) {
     const data = {
         icon: "🤩",
         title1: "DON'T MISS OUT",
-        size: { title1: "50px" },
+        size: isMobile ? { title1: "20px",fb : "10px" } : { title1: "30px" },
         title2: "Unleash your",
         highlighted: "Potential",
         title3: "with us",
@@ -16,14 +16,15 @@ function Join() {
     return (
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh" }} className='joinContainer'>
             <div className='joinBox'>
-                <TagLine data={data} button={true} buttonS={false} value="Try out now" />
-                <div style={{ position: "relative", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: "8px", fontWeight: "600", fontSize: "24px" }} className='happyContainer'>
+                <div>
+                    <TagLine data={data} button={true} buttonS={false} value="Try out now" style={{}} />
+                </div>
+                <div style={{ position: "relative", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: "8px", fontWeight: "600" }} className='happyContainer'>
                     <p className='happyButton' style={{ backgroundColor: "white" }}>
                         <span style={{ color: "#8247ff" }}>200+</span> Happy users
                     </p>
-                    <div style={{ position: "relative" }}>
-                        <img src="https://framerusercontent.com/images/S4kVG1FFzSqxr8zOqpvJRfsBad0.png?scale-down-to=1024" alt="" style={{ width: "80%" }} />
-                        <img src="https://framerusercontent.com/images/584hzJDnWCS5SFABKjaCzgDspY.png?scale-down-to=512" alt="" style={{ position: "absolute", bottom: 0, right: 0, width: "100%" }} />
+                    <div className='joinImgCon'>
+                        <img className='joinImg1' src="https://framerusercontent.com/images/S4kVG1FFzSqxr8zOqpvJRfsBad0.png?scale-down-to=1024" alt=""  />
                     </div>
                 </div>
             </div>
