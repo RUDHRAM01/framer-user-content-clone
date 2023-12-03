@@ -79,7 +79,7 @@
 
 .TagLine .child3 {
   font-size: 20px;
-  width: 40vw;
+  max-width: 40vw;
   color: #767575;
 }
 
@@ -146,16 +146,14 @@
   gap: 40px;
 }
 
-
-
 .featureCard .card1 {
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding: 4vw; 
+  padding: 4vw;
   max-width: 460px;
   font-size: calc(14px + 1vw);
-  height: auto; 
+  height: auto;
   background-color: #ededfa;
   border-radius: 24px;
   font-weight: 600;
@@ -172,7 +170,7 @@
   border-radius: 24px;
 }
 
-.card2 img{
+.card2 img {
   width: 100%;
   max-height: 38vh;
 }
@@ -201,12 +199,12 @@
   background-color: #212121;
   max-width: 300px;
   width: 96%;
-  height:max-content;
+  height: max-content;
   border-radius: 24px;
   border: 1px solid rgba(211, 211, 211, 0.053);
 }
 
-.moreCI{
+.moreCI {
   font-size: calc(30px + 1vw);
 }
 
@@ -235,7 +233,7 @@
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
-  padding: 8px;
+  padding: 20px;
 }
 
 .planFeatureCard .type {
@@ -259,7 +257,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #1c1c1c;
-  padding: 40px 40px;
+  padding: 20px 40px;
   border-radius: 36px;
   height: fit-content;
   min-height: 52vh;
@@ -284,8 +282,7 @@
   text-align: start;
   padding: 2px 20px;
   height: fit-content;
-  max-width: 250px;
-  width: 60%;
+  max-width: 350px;
 }
 
 .planFeatureCard button {
@@ -308,30 +305,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  overflow-x: scroll;
-  scroll-behavior: auto;
+  flex-direction: row;
   gap: 20px;
 }
 
+
+
 .card-container .card {
-  width: 80%;
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
-  animation: slide 15s linear infinite;
+  width: 40vh;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
 .joinContainer {
   background: linear-gradient(to bottom, #f5f5dc24, #ffc0cb37);
@@ -340,10 +328,26 @@
 .joinBox {
   background-color: white;
   display: flex;
-  width: 80%;
+  max-width: 80vw;
+  width: 94%;
   border-radius: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
+#flexActiveClass {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: start;
+  gap: 20px;
+  padding: 80px;
+}
+
+#flexNoActive {
+  padding: 80px 0px;
+}
 .happyButton {
   border: 2px solid rgba(211, 211, 211, 0.431);
   padding: 8px;
@@ -351,24 +355,99 @@
 }
 
 .happyContainer {
+  font-size: 24px;
   background-image: url("https://framerusercontent.com/images/584hzJDnWCS5SFABKjaCzgDspY.png?scale-down-to=512");
 }
+
+.joinImgCon {
+  padding: 0px 80px;
+}
+.joinImg1 {
+  width: 80%;
+  height: auto;
+  mask-image: url("https://framerusercontent.com/images/584hzJDnWCS5SFABKjaCzgDspY.png?scale-down-to=512");
+}
+
+
+.bottom{
+  padding: 60px 80px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+  .bottom .Logo img{
+    width: 100%;
+  }
+  .bottom .Logo{
+    width: 10%;
+  }
+  .joinBox {
+    flex-wrap: wrap;
+  }
+  .joinImg1 {
+    width: 60%;
+    height: auto;
+  }
+
+  #flexActiveClass {
+    padding: 10px;
+  }
+}
+
 
 @media (max-width: 767px) {
   .TagLine .child3 {
     width: 94%;
+    font-size: 14px;
+  }
+.happyContainer{
+  font-size: 16px;
+}
+  #flexActiveClass {
+    padding: 10px 20px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #flexNoActive {
+    padding: 80px 0px;
   }
 
-  .firstButt , .lastButt{
+  .firstButt,
+  .lastButt {
     width: 94%;
   }
 
-  .featureCards{
+  .featureCards {
     width: 94%;
   }
 
-  .moreFeature img{
+  .moreFeature img {
     width: 60%;
   }
 
+  .joinImg1 {
+    width: 100%;
+    padding : 10px;
+  }
+
+  .bottom{
+    padding: 60px 20px;
+  }
+  .bottom *{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .bottom .Logo{
+    width: 100%;
+  }
+  .bottom .Logo img{
+    width: 80%;
+  }
 }
+
