@@ -92,7 +92,7 @@
   justify-content: center;
 }
 
-.firstButt {
+.firstButt , .buyClass {
   background-color: #8247ff;
   color: #ffffff;
   padding: 12px 34px;
@@ -373,7 +373,14 @@
   padding: 60px 80px;
 }
 
-
+.navModel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f5f5dc24, #ffc0cb37);
+}
 
 
 @media (max-width: 1200px) {
