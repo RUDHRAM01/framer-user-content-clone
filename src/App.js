@@ -32,7 +32,7 @@ function App() {
       <QA isMobile={isMobile} />
       <Plan isMobile={isMobile} />
       <Testimonials isMobile={isMobile} />
-      <Join />
+      <Join isMobile={isMobile}/>
       <Bottom />
     </div>
   );
