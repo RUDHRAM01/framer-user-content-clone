@@ -3,7 +3,7 @@ import React from 'react'
 function Bottom() {
     return (
         <>
-            <div style={{ display: "flex", justifyContent: "space-between", minHeight: "30vh", padding: "60px 80px", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" }} className='bottom'>
                 <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", width: "100%" }}>
                     <div className='Logo'>
                         <img src="https://framerusercontent.com/images/tgELERqZ0nObn14bTi418qTbg.png?scale-down-to=512" alt="Logo" width="180px" />
