@@ -3,7 +3,7 @@ import { FaCirclePlay } from "react-icons/fa6";
 function TagLine(props) {
     const flexStart = props?.style ? true : false
     return (
-        <div className='TagLine' style= {flexStart ? {textAlign: "start",justifyContent:"flex-start",alignItems:"flex-start",  padding: "80px 80px"} : {  padding: "80px 0px"}}>
+        <div className='TagLine' id={flexStart ? 'flexActiveClass' : "flexNoActive"}>
             <p className='child1'>
                 <span>{props?.data?.icon}</span> {props?.data?.title1}
             </p>
@@ -17,7 +17,7 @@ function TagLine(props) {
             }
             {props?.button &&
                 <div className='child4'>
-                    <button className='firstButt'>{props?.value}</button>
+                    <button className='firstButt' style={{fontSize : props?.data?.size?.fb}}>{props?.value}</button>
                     {props?.buttonS &&
                         <button className='lastButt'>Watch Demo <FaCirclePlay /></button>
                     }
