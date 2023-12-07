@@ -1,66 +1,51 @@
 import React from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+
 
 function Card() {
   const data = [
     {
       title: "Manage Wise transformed our team's productivity. The intuitive interface and powerful features have made a significant impact on our daily operations",
-      icon: "",
-      name: "Emily"
+      icon: "https://framerusercontent.com/images/dgHsIQVrsxRxtadpghDWppPujE.jpg",
+      name: "Emily",
+      position:"Art Director"
     },
     {
       title: "I can't imagine running my business without this product. The automation features have saved me hours of manual work, allowing me to focus on strategic tasks.",
-      icon: "",
-      name: "Alex"
+      icon: "https://framerusercontent.com/images/PIlOZWlmobm4uLtBhKFfw7HS4.jpg",
+      name: "Alex",
+      position:"IT Manager"
     },
     {
       title: "Using this product has been a game-changer for our team. The collaboration features and intuitive interface have greatly improved our productivity.",
-      icon: "",
-      name: "David"
+      icon: "https://framerusercontent.com/images/mIAsKrgLvd7WbLFFsh6f6YobhSc.jpg",
+      name: "David",
+      position:"Freelancer"
     },
     {
       title: "The customer support team behind this product is exceptional. They have been incredibly responsive and helpful, addressing any questions or concerns promptly.",
-      icon: "",
-      name: "Sarah"
+      icon: "https://framerusercontent.com/images/OOtXrjMtLK5Xx3QTQXHynwpqYi4.jpg",
+      name: "Sarah",
+      position:"Project Manager"
     }
   ];
 
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 4
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
+
 
   return (
     <div className="card-container">
-      <Carousel
-        className="owl-carousel owl-theme"
-        responsive={responsive}
-        infinite={true}
-        autoPlay
-        autoPlaySpeed={2000}
-        removeArrowOnDeviceType={['tablet', 'mobile']}
-      >
-        {data.map((value, i) => (
-          <div key={i} className="card">
-            <p>{value?.title}</p>
+
+      {data.map((value, i) => (
+        <div key={i} className="card">
+          <p>{value?.title}</p>
+          <div style={{ display: "flex", gap: "4px", alignItems: "center", justifyContent: "center" }}>
+            <img src={value?.icon} alt="" style={{ width: "40px", height: "40px" }} />
+            <div style={{ display: "flex", gap: "4px", justifyContent: "center",flexDirection:"column",textAlign:"start" }}>
+              <h4 style={{margin:"0%"}}>{value?.name}</h4>
+              <h6 style={{margin:"0%"}}>{value?.position}</h6>
+            </div>
           </div>
-        ))}
-      </Carousel>
+        </div>
+      ))}
     </div>
   );
 }
